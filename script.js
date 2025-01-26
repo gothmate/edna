@@ -61,7 +61,11 @@ function updateChoices() {
 				text.includes('OLHAR O QUE TEM')
 			) {
 				game.innerHTML = positions.olhar;
-			} else if (text.includes('VOLTAR PRA CASA')) {
+			} else if (
+				text.includes('VOLTAR PRA CASA') ||
+				text.includes('POESIA') ||
+				text.includes('PUTARIA')
+			) {
 				game.innerHTML = positions.casa;
 			}
 			updateChoices();
