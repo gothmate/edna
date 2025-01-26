@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #333;
+}
+p {
+  font-size: 1.5rem;
+  color: #464646;
+}
+button, a {
+  margin-block: 1rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  background: rgb(82, 82, 82);
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+}
+
+button:hover, a:hover {
+  background: #8f1e1e;
+}
+
+main {
+  font-family: 'Segoe UI', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ebeb48 50%, #09645f);
+  .game {
+    padding: 3rem;
+    display: flex;
+    height: max-content;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .text {
+      padding: 1.5rem;
+      text-align: justify;
+      p {
+        font-size: 1.2rem;
+        max-width: 80%;
+      }
+      h3 {
+        font-size: 1.8rem;
+      }
+    }
+    .choices {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
