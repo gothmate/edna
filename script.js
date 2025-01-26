@@ -18,7 +18,7 @@ const positions = {
         <h3>"Putz! A supervisora deve estar chegando agora. Vou ter que..."</h3></div>
         <div class="choices">
         <button class="choice">IR LÁ ATRÁS DA FÁBRICA E CONFERIR SE É ELA MESMO</button>
-        <button class="choice">PEGAR O CAFÉ HORROROSO DA GARRAFA TÉRMICA DA COPA</button></div>`,
+        <button class="choice">IR CAGAR NO BANHEIRO TRISTE DOS FUNCIONÁRIOS</button></div>`,
 	confere: `<div class="text"><h1>Edna</h1><p>Ao chegar no final do corredor por onde veio, viu que o barulho era de um caminhão chegando. Suspirou aliviada.</p><p>Alguns homens estavam descarregando caixas e mais caixas de papelão, do tipo de guardar arquivo, como as que tinham no administrativo.</p>
         <p>Se aproximou de uma das caixas e leu na tampa: "PARA TINGIR. COR: AMARELA"</p><br><p>Pensou:</p><h3>"Não parecem as caixas das resmas que usamos. Quer saber..."</h3></div>
         <div class="choices"><button class="choice">ISSO NÃO É DA MINHA CONTA! VOU É VOLTAR PRA MINHA ESTAÇÃO DE TRABALHO</button>
@@ -34,7 +34,8 @@ const positions = {
         <p>Olhou as folhas de baixo e eram todas obituários de pessoas sem nome, mas de diversas idades. Abriu outra caixa em que estava escrito na tampa: "PARA TINGIR. COR: ROSA"</p>
         <p>Dentro era a mesma coisa. A fábrica estava usando obituários de indigentes como matéria prima para fazer confetes de carnaval.</p>
         <br><p>Pensou:</p>
-        <h3>"Mas que tremenda..."</h3></div><div class="choices">
+        <h3>"Mas que tremenda..."</h3></div>
+        <div class="choices">
         <button class="choice">POESIA</button>
         <button class="choice">PUTARIA</button></div>`,
 	casa: `<div class="text"><h1>Edna passou um bom tempo pensando nisso. Deveria fazer algo a respeito?</h1></div>`,
@@ -51,6 +52,7 @@ function updateChoices() {
 				game.innerHTML = positions.cagada;
 			} else if (
 				text.includes('IR LÁ ATRÁS') ||
+				text.includes('IR CAGAR NO BANHEIRO TRISTE') ||
 				text.includes('PEGAR O CAFÉ')
 			) {
 				game.innerHTML = positions.confere;
